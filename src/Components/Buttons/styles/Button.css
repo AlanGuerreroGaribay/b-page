@@ -1,0 +1,66 @@
+.Button {
+  color: antiquewhite;
+  height: 37px;
+  text-decoration-style: none;
+  display: flex;
+  align-items: center;
+  border: solid 2px antiquewhite;
+  border-radius: 30px;
+  padding-inline: 30px;
+  font-size: 15px;
+  background-color: #324f5d;
+  cursor: pointer;
+  user-select: none;
+}
+.Button:hover {
+  opacity: 0.6;
+}
+.Button img {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+}
+
+.Button-empty {
+  border-radius: 35px;
+  display: flex;
+  justify-content: center;
+  background-color: #324f5d;
+  cursor: pointer;
+  user-select: none;
+}
+.Button-empty:hover {
+  opacity: 0.6;
+}
+.Button-empty:active {
+  opacity: 1;
+  background-color: #20343d;
+}
+.Button-empty img{
+  width: 25px;
+  height: 25px;
+}
+
+.Button-payments {
+  color: antiquewhite;
+  box-shadow: 1px 1px 1px grey;
+  margin-inline: 5px;
+  height: 37px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  padding-block: 2px;
+  padding-inline: 40px;
+  font-size: 15px;
+  background-color: #324f5d;
+  text-decoration-style: none;
+  cursor: pointer;
+  user-select: none;
+}
+.Button-payments:hover {
+  opacity: 0.6;
+}
+.Button-payments:active {
+  opacity: 1;
+  background-color: #20343d;
+}

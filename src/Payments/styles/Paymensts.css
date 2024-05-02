@@ -1,0 +1,24 @@
+.payments-container {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.payments-input-container {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.payments-display-container {
+  width: 100%;
+}
+
+.payments-button-container {
+  display: flex;
+  align-items: baseline;
+  margin-right: 20px;
+}

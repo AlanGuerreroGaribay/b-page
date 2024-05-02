@@ -1,0 +1,24 @@
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid grey;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px grey;
+  padding: 2px;
+  user-select: none;
+}
+
+.input-container img {
+  width: 25px;
+  height: 25px;
+}
+
+.input-search-comp {
+  height: 30px;
+  width: 90%;
+  font-size: 15px;
+  border: none;
+  outline: none;
+}
