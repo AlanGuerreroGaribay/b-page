@@ -3,7 +3,7 @@ import App from "../App/screens/App";
 import Dashboard from "../Dashboard/screens/Dashboard";
 import Home from "../Home/screens/Home";
 import Neighbors from "../Neighbors/screens/Neighbors";
-import Reports from "../Reports/Reports";
+import Reports from "../Reports/screen/Reports";
 import Payments from "../Payments/screen/Payments";
 
 const router = createBrowserRouter([

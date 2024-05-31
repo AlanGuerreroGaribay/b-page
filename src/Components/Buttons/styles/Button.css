@@ -36,9 +36,29 @@
   opacity: 1;
   background-color: #20343d;
 }
-.Button-empty img{
+.Button-empty img {
   width: 25px;
   height: 25px;
+}
+
+.Button-light-empty {
+  border-radius: 35px;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  cursor: pointer;
+  user-select: none;
+}
+.Button-light-empty:hover {
+  opacity: 0.6;
+}
+.Button-light-empty:active {
+  opacity: 1;
+  background-color: grey;
+}
+.Button-light-empty img {
+  width: 100%;
+  height: 100%;
 }
 
 .Button-payments {

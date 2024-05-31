@@ -3,7 +3,7 @@ import "../styles/Button.css";
 type Button = {
   text?: string;
   image?: string;
-  buttonStyle?: "Button" | "Button-payments" | "Button-empty";
+  buttonStyle?: "Button" | "Button-payments" | "Button-empty" | "Button-light-empty";
   handler?: React.MouseEventHandler<HTMLDivElement> | undefined;
 };
 

@@ -1,0 +1,12 @@
+.payments-input-container {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.payments-button-container {
+  display: flex;
+  align-items: baseline;
+  margin-right: 20px;
+}

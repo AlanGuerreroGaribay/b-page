@@ -1,42 +1,32 @@
-import Button from "../../../../Components/Buttons/screen/Button";
-import cancel from "../../../../assets/Modal/cancel-svgrepo-com 1.svg";
+import Modal from "../../../../Components/Modal/screen/Modal";
 import InputSearch from "../../../../Components/Inputs/screens/InputSearch";
 import "../styles/ModalAgreement.css";
 
-type ModalPaymentType = {
-  showModal: React.MouseEventHandler<HTMLDivElement>;
+type ModalType = {
+  isOpen: string;
+  closeModal?: React.MouseEventHandler<HTMLDivElement> | undefined;
 };
 
-const ModalAgreement = ({ showModal }: ModalPaymentType) => {
+const ModalAgreement = ({ isOpen, closeModal }: ModalType) => {
   return (
-    <div className="modal-screen">
-      <div className="modal-container-show">
-        <div className="modal-button-container">
-          <div className="modal-title">Pago</div>
-          <Button
-            image={cancel}
-            buttonStyle="Button-empty"
-            handler={showModal}
-          />
-        </div>
-        <div className="modal-content-container">
+    <>
+      {isOpen === "agreement" && (
+        <Modal title="convenio" handler={closeModal}>
           <div className="modal-display-container">
             <div className="modal-input-container">
-              <InputSearch icon="" />
+              <InputSearch icon="" placeholderText="Casa" />
             </div>
             <div className="modal-text-container">$3000.00</div>
-            <div className="modal-input-container">
-              <InputSearch icon="" />
-            </div>
-            <div className="modal-text-container">$3000.00</div>
-            <div className="modal-input-container">
-              <InputSearch icon="" />
-            </div>
           </div>
-          <Button text="Guardar" buttonStyle="Button" />
-        </div>
-      </div>
-    </div>
+          <div className="modal-display-container">
+            <div className="modal-input-container">
+              <InputSearch icon="" placeholderText="Cantidad de Pagos"/>
+            </div>
+            <div className="modal-text-container">$3000.00</div>
+          </div>
+        </Modal>
+      )}
+    </>
   );
 };
 
