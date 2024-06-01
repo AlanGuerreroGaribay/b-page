@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import Button from "../../Buttons/screen/Button";
+import Button from "../../Buttons/Button";
 import cancel from "../../../assets/Modal/cancel-svgrepo-com 1.svg";
 import "../styles/Modal.css";
 

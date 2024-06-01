@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { linksSideBar } from "./utils/SideBar.utils";
 import { useState } from "react";
-import Button from "../../../Buttons/screen/Button";
+import Button from "../../../Buttons/Button";
 import Exit from "../../../../assets/Buttons/RiUserReceived2Line.svg";
 import "./styles/SideBar.css";
 

@@ -1,10 +1,10 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import App from "../App/screens/App";
+import App from "../App/App";
 import Dashboard from "../Dashboard/screens/Dashboard";
-import Home from "../Home/screens/Home";
-import Neighbors from "../Neighbors/screens/Neighbors";
-import Reports from "../Reports/screen/Reports";
-import Payments from "../Payments/screen/Payments";
+import Home from "../features/Home/Home";
+import Neighbors from "../features/Neighbors/Neighbors";
+import Reports from "../features/Reports/Reports";
+import Payments from "../features/Payments/Payments";
 
 const router = createBrowserRouter([
   {

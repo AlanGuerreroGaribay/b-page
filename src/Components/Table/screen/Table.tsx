@@ -1,10 +1,10 @@
 import { useState } from "react";
 import View from "../../../assets/Table/View.svg";
 import Lock from "../../../assets/Table/Lock.svg";
-import Button from "../../Buttons/screen/Button";
+import Button from "../../Buttons/Button";
 import Edit from "../../../assets/Buttons/RiPencilLine.svg";
-import ModalReportDetail from "../../../Reports/Components/ModalReport/screens/ModalReportDetail";
-import ModalPaymentDetail from "../../../Payments/Components/ModalPaymentDetail/ModalPaymentDetail";
+import ModalReportDetail from "../../../features/Reports/components/ModalReport/ModalReportDetail";
+import ModalPaymentDetail from "../../../features/Payments/components/ModalPaymentDetail/ModalPaymentDetail";
 import "../styles/Table.css";
 
 type TableDataType = {
