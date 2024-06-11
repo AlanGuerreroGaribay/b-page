@@ -6,6 +6,7 @@ import Edit from "../../../assets/Buttons/RiPencilLine.svg";
 import ModalReportDetail from "../../../features/Reports/components/ModalReport/ModalReportDetail";
 import ModalPaymentDetail from "../../../features/Payments/components/ModalPaymentDetail/ModalPaymentDetail";
 import "../styles/Table.css";
+import { Table2 } from "./Table2";
 
 type TableDataType = {
   Id?: number;
@@ -51,85 +52,7 @@ const Table = ({ page, headers, tableData }: TableData) => {
         isOpen={modal}
         closeHandler={() => setModal("")}
       />
-      <table>
-        <thead className="header">
-          <tr>
-            {headers.map((head, i) => {
-              return (
-                <>
-                  <th key={i}>{head}</th>
-                </>
-              );
-            })}
-          </tr>
-        </thead>
-        {tableData.map((data, i: number) => {
-          return (
-            <tbody>
-              {page === "Neighbors" && (
-                <tr key={i}>
-                  <td>{data?.Casa}</td>
-                  <td>{data?.Nombre}</td>
-                  <td>{data?.Correo}</td>
-                  <td>{data?.Telefono}</td>
-                  <td>
-                    <div className="tools-container">
-                      <Button
-                        image={Edit}
-                        buttonStyle="Button-light-empty"
-                        handler={() => {
-                          setNeighbor(data);
-                          setModal("");
-                        }}
-                      />
-                      <img src={Lock} alt="" />
-                    </div>
-                  </td>
-                </tr>
-              )}
-              {page === "Reports" && (
-                <tr key={i}>
-                  <td>{data.Id}</td>
-                  <td>{data.Estado}</td>
-                  <td>{data.Fecha}</td>
-                  <td>
-                    <div className="tools-container">
-                      <Button
-                        image={View}
-                        buttonStyle="Button-light-empty"
-                        handler={() => {
-                          setReport(data);
-                          setModal("report");
-                        }}
-                      />
-                      <img src={Lock} alt="" />
-                    </div>
-                  </td>
-                </tr>
-              )}
-              {page === "Payments" && (
-                <tr key={i}>
-                  <td>{data?.Casa}</td>
-                  <td>{data?.Estado}</td>
-                  <td>{data?.Total}</td>
-                  <td>{data?.Fecha}</td>
-                  <td>
-                    <div className="tools-container">
-                      <Button
-                        image={View}
-                        buttonStyle="Button-light-empty"
-                        handler={() => {
-                          paymentHandler(data, "payment");
-                        }}
-                      />
-                    </div>
-                  </td>
-                </tr>
-              )}
-            </tbody>
-          );
-        })}
-      </table>
+      <Table2 headers={headers} tableData={tableData} page={page} />
     </div>
   );
 };

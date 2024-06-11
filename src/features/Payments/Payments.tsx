@@ -6,6 +6,7 @@ import ModalExpenses from "./components/ModalExpenses/ModalExpenses";
 import ModalAgreement from "./components/ModalAgreement/ModalAgreement";
 import ButtonsForModals from "./components/ButtonsForModals/ButtonsForModals";
 import "./Paymensts.css";
+import { Table2 } from "../../Components/Table/screen/Table2";
 
 const Payments = () => {
   const [modal, setModal] = useState<string>("");
@@ -28,9 +29,10 @@ const Payments = () => {
 
       {/* Tabla de Datos*/}
       <div className="payments-display-container">
-        <Table
+        <Table2
           page="Payments"
-          headers={["Casa", "Estado", "Total", "Fecha", "Herramientas"]}
+          headers={["Casa", "Estado", "Total", "Fecha", "Correo", ' ']}
+          actions={['Editar', 'Eliminar']}
           tableData={Data}
         />
       </div>
